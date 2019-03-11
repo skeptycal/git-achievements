@@ -2,6 +2,7 @@
 <title>skeptycal's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Librarian</title><description>Looked for change that introduce or remove a string with git log -S</description></item>
 <item><title>Apprentice Historian (Level 1)</title><description>Investigate the commit log using git log.</description></item>
 <item><title>Apprentice Merchant (Level 1)</title><description>Added an external repository with git remote add.</description></item>
 <item><title>Apprentice Seamstress (Level 1)</title><description>amended a commit with git commit --amend.</description></item>
