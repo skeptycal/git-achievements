@@ -2,6 +2,7 @@
 <title>skeptycal's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Garage Inventor</title><description>Used a custom alias for a Git command</description></item>
 <item><title>Apprentice Messenger (Level 2)</title><description>Applied a patch using git am.</description></item>
 <item><title>Apprentice Carpenter (Level 1)</title><description>Custom git hooks are installed which help catch issues before they are shared.</description></item>
 <item><title>Weaver</title><description>Investigate old branches by using git reflog</description></item>
