@@ -2,6 +2,7 @@
 <title>skeptycal's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Caretaker</title><description>Added a .gitignore file to a repository.</description></item>
 <item><title>Apprentice Locksmith (Level 1)</title><description>Add Signed-off-by line at the end of the commit log message using git commit -s.</description></item>
 <item><title>Apprentice Author (Level 1)</title><description>Made 2^Level commits using git commit.</description></item>
 <item><title>Apprentice Goldsmith (Level 1)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
