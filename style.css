@@ -1,9 +1,11 @@
 a:link {
-	color: gray;
+    color: gray;
 }
+
 a:visited {
-	color: gray;
+    color: gray;
 }
+
 body {
     background-color: black;
     color: white;
@@ -11,10 +13,12 @@ body {
     width: 700px;
     text-align: center;
 }
+
 img {
-    float : right;
-    height : 50px;
+    float: right;
+    height: 50px;
 }
+
 li {
     background-color: #1E2024;
     border: 1px solid gray;
@@ -24,13 +28,16 @@ li {
     -webkit-border-radius: 5px;
     margin-bottom: .5em;
 }
+
 div.title {
     font-weight: bold;
 }
+
 ul {
     text-align: left;
     list-style-type: none;
 }
+
 #locked {
     visibility: hidden;
 }
