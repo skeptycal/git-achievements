@@ -2,6 +2,7 @@
 <title>skeptycal's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Author (Level 5)</title><description>Made 2^Level commits using git commit.</description></item>
 <item><title>Apprentice Banker (Level 3)</title><description>Join two or more development histories together with git merge.</description></item>
 <item><title>Apprentice Blacksmith (Level 2)</title><description>Created a branch using git checkout -b.</description></item>
 <item><title>Collector (Level 4)</title><description>Fetches named heads or tags from another repository with git fetch</description></item>
@@ -21,5 +22,4 @@
 <item><title>Stone Mason (Level 5)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
 <item><title>Apprentice Cathedral Architect (Level 1)</title><description>Added a submodule to a repository.</description></item>
 <item><title>Apprentice Socialite (Level 2)</title><description>pushed a branch to a remote repository using git push</description></item>
-<item><title>Apprentice Author (Level 2)</title><description>Made 2^Level commits using git commit.</description></item>
 </channel></rss>
