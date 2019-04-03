@@ -2,6 +2,7 @@
 <title>skeptycal's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Master Carpenter (Level 19)</title><description>Custom git hooks are installed which help catch issues before they are shared.</description></item>
 <item><title>Merchant (Level 4)</title><description>Added an external repository with git remote add.</description></item>
 <item><title>Author (Level 6)</title><description>Made 2^Level commits using git commit.</description></item>
 <item><title>Apprentice Cathedral Worker (Level 1)</title><description>Cloned submodule repository and checked out commits specified by superproject.</description></item>
@@ -21,5 +22,4 @@
 <item><title>Apprentice Cathedral Architect (Level 2)</title><description>Added a submodule to a repository.</description></item>
 <item><title>Author (Level 4)</title><description>Made 2^Level commits using git commit.</description></item>
 <item><title>Apprentice Architect (Level 2)</title><description>Created a new repository with git init.</description></item>
-<item><title>Apprentice Merchant (Level 3)</title><description>Added an external repository with git remote add.</description></item>
 </channel></rss>
