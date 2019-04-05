@@ -25,7 +25,6 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-
 function git_achievements_command
 {
     case $2 in
@@ -47,11 +46,10 @@ function git_achievements_command
             ;;
     esac
 }
-
 function log_action
 {
     local expansion=$(unalias_command "$1")
-    
+   
     if [[ $expansion ]] ; then
         shift
         echo "$expansion $@" >> "${ACTIONLOGFILE}"
@@ -61,19 +59,16 @@ function log_action
     echo -n "Date: " >> "${ACTIONLOGFILE}"
     date >> "${ACTIONLOGFILE}"
 }
-
 function output_achievement
 {
 echo "
 ********************************************************************************
 Git Achievement Unlocked!
-
 $1
 $2
 ********************************************************************************
 " |  sed  -e :a -e 's/^.\{1,79\}$/ & /;ta'
 }
-
 function unlock_achievement()
 {
     grep "$1" "${ACHIEVEMENTSLOGFILE}" > /dev/null 2>/dev/null
@@ -82,12 +77,10 @@ function unlock_achievement()
     fi
     output_achievement "$@" >&2
     output_achievement "$@" >> "${ACHIEVEMENTSLOGFILE}"
-
     if [ "`git config --global achievement.upload`" = "true" ] ; then
         publish_achievements "$@"
     fi
 }
-
 function count_command
 {
     export power=`awk "BEGIN {n=0} /$1/ {n++} END { print log(n)/log(2) }" "$ACTIONLOGFILE"`
@@ -95,14 +88,12 @@ function count_command
     #export powerof2=`awk "BEGIN {n=0} /$1/ {n++} END { print and(n, n-1) }" "$ACTIONLOGFILE"`
     # mysys gawk it old and doesn't have the bitwise operation and :( so we have to use perl for now
     export powerof2=`echo 'use Env; $y=$ENV{'count'}; $x=($y & ($y-1)); print "$x\n" ' | perl -`
-
     # Set a default value of 0. Bug seems to occur when the achievement is unlocked
     if [ ${count:-0} -eq 1 ] ; then
         powerof2="1"
     fi
     #echo "cmd: $1 powerof2: $powerof2 power: $power count: $count"
 }
-
 function hcount_unlock_achievement
 {
     title="${1}"
@@ -120,7 +111,6 @@ function hcount_unlock_achievement
     esac
     unlock_achievement "${pre}${title} (Level ${power})" "${description}"
 }
-
 function count_unlock_achievement
 {
     title="${1}"
@@ -131,7 +121,6 @@ function count_unlock_achievement
         hcount_unlock_achievement "${title}" "${description}" "$power"
     fi
 }
-
 function unalias_command
 {
     #XXX maybe this should be recursive?
@@ -140,7 +129,6 @@ function unalias_command
       echo $cmdline
     fi
 }
-
 function check_for_achievements
 {
     # Anyone know of a cleaner way of checking for hooks?
@@ -149,30 +137,25 @@ function check_for_achievements
     if [ ${hooks} -ge 1 ] ; then
         hcount_unlock_achievement "Carpenter" "Custom git hooks are installed which help catch issues before they are shared." "$hooks"
     fi
-
     # Custom command
     if [ -e "`git --exec-path`/$1" ] && [ $1 != "achievements" ] && echo "$1" | grep -q -v ^- ; then
         unlock_achievement "Inventor ($1)" "Used a command that isn't part of the built in Git command"
     fi
-
     case $2 in
         --help )
             unlock_achievement "Student" "Accessed the documentation for a command with git [command] --help"
             return
             ;;
     esac
-
     local command=$1
     local expansion=$(unalias_command "$command")
-
     if [[ $expansion ]] ; then
       # not a real inventor
       unlock_achievement "Garage Inventor" "Used a custom alias for a Git command"
-      
+     
       # get actual command, removing any additional parameters from the command
       command=$(echo "$expansion" | awk '{ print $1; }')
     fi
-
     case $command in
        add )
             count_unlock_achievement "Stone Mason" "Added files to the index area for inclusion in the next commit with git add" "$command"
@@ -238,7 +221,6 @@ function check_for_achievements
                 count_unlock_achievement "Goldsmith" "Reviewed patches before committing with git diff --cached." "diff --cached"
                 ;;
             esac
-
             ;;
         fetch )
             count_unlock_achievement "Collector" "Fetches named heads or tags from another repository with git fetch" "$command"
@@ -357,16 +339,13 @@ function check_for_achievements
             ;;
     esac
 }
-
 function link_to_git_docs
 {
     sed -e 's_git \([a-z0-9-]*\)_<a href="http://www.kernel.org/pub/software/scm/git/docs/git-\1.html">git-\1</a>_g' | sed -e 's/\/git-hooks/\/githooks/g'
 }
-
 function clean_logged_achievements() {
     cat "${ACHIEVEMENTSLOGFILE}" | grep -ve '^$' | grep -v 'Git Achievement Unlocked!' | grep -v '*' | sed -e 's/^ *//g'  -e 's/ *$//g'
 }
-
 function publish_achievements
 {
     git_achievements="$(which git-achievements)"
@@ -381,11 +360,8 @@ function publish_achievements
           ;;
       esac
     fi
-
     cd "${git_achievements_dir}"
-
     user=`git config --global user.name`
-
 echo "
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -399,31 +375,24 @@ echo "
 " > index.html
     mailhash=`git config --global user.email | xargs echo -n | tr '[A-Z]' '[a-z]' | openssl md5 | sed -e 's/.* //'`
     echo "<h2>${user}'s Git Achievements <img src='http://www.gravatar.com/avatar/${mailhash}'/></h2>" >> index.html
-
     # STATS
     cat git-achievements | grep 'unlock_achievement ' | grep -v ' sed ' | grep -v '\${' | sed -e 's/.*unlock_achievement //g' -e 's/^"//g' -e 's/"$//g' -e 's/\$power/X/g' -e 's/\$count/X/g' -e 's/\$hooks/X/g' | sort | awk -F"\" \"" '{ print "<li><div class=\"title\">" $1 "</div><div class=\"info\">" $2 "</div></li>" }' | link_to_git_docs > all.html
     total=`cat all.html | wc -l`
-
     unlockedCount=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | sed -e 's/Apprentice //g' -e 's/Master //g' -e 's/(.*//g' | sort | uniq | wc -l`
     levels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | grep Level | sed -e 's/.* //g' -e 's/)//g' | awk '{ t=t+$0 } END { print t }'`
     onelevels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | wc -l`
     let points="${levels}"+"${onelevels}"
     echo "Unlocked ${unlockedCount}/$total <a href=\"http://github.com/icefox/git-achievements\">Git Achievements</a> for $points points<br>" >> index.html
-
     unlocked=`cat "${ACHIEVEMENTSLOGFILE}" | grep Unlocked | wc -l`
-
     # Unlocked Achievements
     echo "<ul>" >> index.html
     cat "${ACHIEVEMENTSLOGFILE}" | grep -ve '^$' | grep -v 'Git Achievement Unlocked!' | grep -v '*' | sed -e 's/^ *//g'  -e 's/ *$//g' | awk '{ if (NR % 2 != 0) printf "<li><div class=\"title\">" $0 "</div>"; else printf "  <div class=\"info\">" $0 "</div></li>\n" }' | link_to_git_docs | sort >> index.html
-
     echo "</ul>" >> index.html
-
     # Git Commands
     echo 'Git commands sorted by usage:' >> index.html
     echo "<pre style=\"text-align: left\">" >> index.html
     cat  "${ACTIONLOGFILE}" | grep -v Date | grep -v 'git-dir' | awk '{ print $1 }' | sort | uniq -c | sort -nr >> index.html
     echo "</pre>" >> index.html
-
     # Locked Achievements
     echo "<script type=\"text/javascript\">
 function showLocked() {
@@ -435,7 +404,6 @@ function showLocked() {
 <div id=\"locked\">
 There are $total Achievements. Some achievements can be leveled up depending on the number of times it is used (Used 2 times = level 1, 4 = level 2, 8 = level 3, 16 = level 4, 32 = level 5, etc)
 <ul>" >> index.html
-
     cat index.html | sed -e 's/Apprentice //g' -e 's/Master //g'> temp.html
     cat all.html | while read line ;
     do
@@ -448,9 +416,7 @@ There are $total Achievements. Some achievements can be leveled up depending on 
     echo '</ul></div>' >> index.html
     rm temp.html
     rm all.html
-
     echo "</body></html>" >> index.html
-
     # Update the RSS feed
     echo '<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel>' > index.rss
     echo "<title>${user}'s Git Achievements</title>" >> index.rss
@@ -458,18 +424,15 @@ There are $total Achievements. Some achievements can be leveled up depending on 
     echo "<link></link>" >> index.rss
     cat "${ACHIEVEMENTSLOGFILE}"  | grep -ve '^$' | grep -v 'Git Achievement Unlocked!' | grep -v '*' | sed -e 's/^ *//g'  -e 's/ *$//g' | awk '{ if (NR % 2 != 0) printf "<item><title>" $0 "</title>"; else printf "<description>" $0 "</description></item>\n" }' | tail -n 20 | sed '1!G;h;$!d' >> index.rss
     echo '</channel></rss>' >> index.rss
-
     abortcount=`git status | grep 'Changes to be committed' | wc -l`
     if [ ! $abortcount -eq 0 ] ; then
         echo "There are staged changes in the repository, updates let uncommitted"
         return
     fi
-
     if [ ! "`git config --global achievement.upload`" = "true" ] ; then
         echo "Global achievement.upload not set to true, updates left uncommited"
         return
     fi
-
     echo "Adding new achievements and publishing to origin."
     git add index.html index.rss
     if [ -z "${1}" ] ; then
@@ -480,10 +443,8 @@ There are $total Achievements. Some achievements can be leveled up depending on 
     git commit -qm "${message}"
     git push origin gh-pages
 }
-
 ACTIONLOGFILE="$HOME/.git-achievements-action.log"
 ACHIEVEMENTSLOGFILE="$HOME/.git-achievements.log"
-
 if [ ! "$1" = "achievements" ] ; then
     git "$@"
     r=$?
@@ -493,10 +454,8 @@ if [ ! "$1" = "achievements" ] ; then
 else
     git_achievements_command "$@"
 fi
-
 if [ "`echo '$1' | sed -e 's/=.*//g'`" = "--git-dir" ] ; then
     exit 0
 fi
-
 log_action $@
 check_for_achievements $@
