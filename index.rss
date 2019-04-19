@@ -2,6 +2,7 @@
 <title>skeptycal's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Architect (Level 6)</title><description>Created a new repository with git init.</description></item>
 <item><title>Apprentice Product Manager (Level 2)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
 <item><title>Apprentice Product Manager (Level 1)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
 <item><title>Master Author (Level 7)</title><description>Made 2^Level commits using git commit.</description></item>
@@ -21,5 +22,4 @@
 <item><title>Socialite (Level 6)</title><description>pushed a branch to a remote repository using git push</description></item>
 <item><title>Apprentice Carpenter (Level 1)</title><description>Custom git hooks are installed which help catch issues before they are shared.</description></item>
 <item><title>Author (Level 5)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Apprentice Banker (Level 3)</title><description>Join two or more development histories together with git merge.</description></item>
 </channel></rss>
