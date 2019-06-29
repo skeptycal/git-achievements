@@ -1,6 +1,8 @@
 # Git Achievements
 
-Git-Achievements records all of the achievements you acquire while using Git. There are over 40 achievements, most with different levels to be achieved. After a git command is executed if a new achievement is unlocked git-achievements will display a message on the console for your enjoyment:
+> Git-Achievements records all of the achievements you acquire while using Git. There are over 40 achievements, most with different levels to be achieved.
+
+> If a new achievement is unlocked after a git command is executed, git-achievements will display a message on the console for your enjoyment:
 
 ```
 ********************************************************************************
@@ -12,13 +14,23 @@ Git-Achievements records all of the achievements you acquire while using Git. Th
 
 ## GitHub Pages
 
-A log of all of your achievements is kept locally, but you can also publish it to GitHub pages so you can share your achievements (and there is an RSS feed so people can track your achievements). For example the project maintainer's achievements page is at http://icefox.github.io/git-achievements/. If you are viewing a forked version of git-achievements you want to replace icefox with the GitHub user account you want to see like so: http://**username**.github.com/git-achievements To push your achievements to GitHub first fork the project on GitHub, clone _your_ repository and set the following config to true:
+A log of all of your achievements is kept locally, but you can also publish it to GitHub pages so you can share your achievements (and there is an RSS feed so people can track your achievements).
+
+For example, the original project creator's achievements page is at:
+
+[http://icefox.github.io/git-achievements/][1]
+
+If you are viewing a forked version of git-achievements you want to replace icefox with the GitHub user account you want to see like so:
+
+[http://**skeptycal**.github.com/git-achievements][2]
+
+To push your achievements to GitHub first fork the project on GitHub, create a branch called `gh-pages`, clone _your_ repository and set the following config to true:
 
 ```
 git config --global achievement.upload "true"
 ```
 
-When an achievement is unlocked the index.html file will be overwritten, committed, and then a `git push origin` will be executed.
+When an achievement is unlocked the index.html file will be overwritten, committed, and then a `git push origin gh-pages` will be executed.
 
 ## Install
 
@@ -34,3 +46,6 @@ You can get your first achievement by running
 ```
 git achievements --help
 ```
+
+[1]: https://icefox.github.io/git-achievements/
+[2]: https://skeptycal.github.io/git-achievements/
