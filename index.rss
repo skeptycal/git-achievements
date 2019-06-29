@@ -1,25 +1,129 @@
-<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel>
-<title>skeptycal's Git Achievements</title>
-<description></description>
-<link></link>
-<item><title>Master Carpenter (Level 18)</title><description>Custom git hooks are installed which help catch issues before they are shared.</description></item>
-<item><title>Master Author (Level 10)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Merchant (Level 5)</title><description>Added an external repository with git remote add.</description></item>
-<item><title>Master Stone Mason (Level 10)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
-<item><title>Master Author (Level 9)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Caretaker</title><description>Added a .gitignore file to a repository.</description></item>
-<item><title>Goldsmith (Level 5)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
-<item><title>Goldsmith (Level 4)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
-<item><title>Apprentice Goldsmith (Level 3)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
-<item><title>Apprentice Goldsmith (Level 2)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
-<item><title>Apprentice Goldsmith (Level 1)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
-<item><title>Apprentice Gipsy (Level 1)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Master Author (Level 8)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Master Socialite (Level 8)</title><description>pushed a branch to a remote repository using git push</description></item>
-<item><title>Master Stone Mason (Level 9)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
-<item><title>Seamstress (Level 4)</title><description>amended a commit with git commit --amend.</description></item>
-<item><title>Apprentice Seamstress (Level 3)</title><description>amended a commit with git commit --amend.</description></item>
-<item><title>Apprentice Seamstress (Level 2)</title><description>amended a commit with git commit --amend.</description></item>
-<item><title>Apprentice Seamstress (Level 1)</title><description>amended a commit with git commit --amend.</description></item>
-<item><title>Apprentice Product Manager (Level 3)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
-</channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>
+            skeptycal's Git Achievements</title>
+        <description></description>
+        <link></link>
+        <item>
+            <title>
+                Master Carpenter (Level 18)</title>
+            <description>
+                Custom git hooks are installed which help catch issues before they are shared.</description>
+        </item>
+        <item>
+            <title>
+                Master Author (Level 10)</title>
+            <description>
+                Made 2^Level commits using git commit.</description>
+        </item>
+        <item>
+            <title>
+                Merchant (Level 5)</title>
+            <description>
+                Added an external repository with git remote add.</description>
+        </item>
+        <item>
+            <title>
+                Master Stone Mason (Level 10)</title>
+            <description>
+                Added files to the index area for inclusion in the next commit with git add</description>
+        </item>
+        <item>
+            <title>
+                Master Author (Level 9)</title>
+            <description>
+                Made 2^Level commits using git commit.</description>
+        </item>
+        <item>
+            <title>
+                Caretaker</title>
+            <description>
+                Added a .gitignore file to a repository.</description>
+        </item>
+        <item>
+            <title>
+                Goldsmith (Level 5)</title>
+            <description>
+                Reviewed patches before committing with git diff --cached.</description>
+        </item>
+        <item>
+            <title>
+                Goldsmith (Level 4)</title>
+            <description>
+                Reviewed patches before committing with git diff --cached.</description>
+        </item>
+        <item>
+            <title>
+                Apprentice Goldsmith (Level 3)</title>
+            <description>
+                Reviewed patches before committing with git diff --cached.</description>
+        </item>
+        <item>
+            <title>
+                Apprentice Goldsmith (Level 2)</title>
+            <description>
+                Reviewed patches before committing with git diff --cached.</description>
+        </item>
+        <item>
+            <title>
+                Apprentice Goldsmith (Level 1)</title>
+            <description>
+                Reviewed patches before committing with git diff --cached.</description>
+        </item>
+        <item>
+            <title>
+                Apprentice Gipsy (Level 1)</title>
+            <description>
+                Create, list, delete a tag signed with GPG using git tag</description>
+        </item>
+        <item>
+            <title>
+                Master Author (Level 8)</title>
+            <description>
+                Made 2^Level commits using git commit.</description>
+        </item>
+        <item>
+            <title>
+                Master Socialite (Level 8)</title>
+            <description>
+                pushed a branch to a remote repository using git push</description>
+        </item>
+        <item>
+            <title>
+                Master Stone Mason (Level 9)</title>
+            <description>
+                Added files to the index area for inclusion in the next commit with git add</description>
+        </item>
+        <item>
+            <title>
+                Seamstress (Level 4)</title>
+            <description>
+                amended a commit with git commit --amend.</description>
+        </item>
+        <item>
+            <title>
+                Apprentice Seamstress (Level 3)</title>
+            <description>
+                amended a commit with git commit --amend.</description>
+        </item>
+        <item>
+            <title>
+                Apprentice Seamstress (Level 2)</title>
+            <description>
+                amended a commit with git commit --amend.</description>
+        </item>
+        <item>
+            <title>
+                Apprentice Seamstress (Level 1)</title>
+            <description>
+                amended a commit with git commit --amend.</description>
+        </item>
+        <item>
+            <title>
+                Apprentice Product Manager (Level 3)</title>
+            <description>
+                Stash the changes in a dirty working directory away with git stash.</description>
+        </item>
+    </channel>
+</rss>
