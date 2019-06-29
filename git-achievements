@@ -47,7 +47,7 @@ function git_achievements_command() {
 }
 function log_action() {
     local expansion=$(unalias_command "$1")
-   
+
     if [[ $expansion ]] ; then
         shift
         echo "$expansion $@" >> "${ACTIONLOGFILE}"
@@ -143,7 +143,7 @@ function check_for_achievements() {
     if [[ $expansion ]] ; then
       # not a real inventor
       unlock_achievement "Garage Inventor" "Used a custom alias for a Git command"
-     
+
       # get actual command, removing any additional parameters from the command
       command=$(echo "$expansion" | awk '{ print $1; }')
     fi
@@ -430,7 +430,7 @@ There are $total Achievements. Some achievements can be leveled up depending on 
         message="New achievement $1"
     fi
     git commit -qm "${message}"
-    git push origin gh-pages
+    git push origin master
 }
 ACTIONLOGFILE="$HOME/.git-achievements-action.log"
 ACHIEVEMENTSLOGFILE="$HOME/.git-achievements.log"
