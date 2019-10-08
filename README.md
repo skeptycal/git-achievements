@@ -22,7 +22,7 @@ For example, the original project creator's achievements page is at:
 
 If you are viewing a forked version of git-achievements you want to replace icefox with the GitHub user account you want to see like so:
 
-[http://**skeptycal**.github.com/git-achievements][2]
+[http://**skeptycal**.github.io/git-achievements][2]
 
 To push your achievements to GitHub first fork the project on GitHub, create a branch called `gh-pages`, clone _your_ repository and set the following config to true:
 
