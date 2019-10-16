@@ -2,6 +2,11 @@
 <title>Michael Treanor's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Stone Mason (Level 4)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
+<item><title>Apprentice Socialite (Level 3)</title><description>pushed a branch to a remote repository using git push</description></item>
+<item><title>Apprentice Author (Level 3)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Homeowner</title><description>Set global email address using git config.</description></item>
+<item><title>Baptised</title><description>Set global user name using git config.</description></item>
 <item><title>Apprentice Socialite (Level 2)</title><description>pushed a branch to a remote repository using git push</description></item>
 <item><title>Apprentice Author (Level 2)</title><description>Made 2^Level commits using git commit.</description></item>
 <item><title>Apprentice Stone Mason (Level 3)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
