@@ -2,6 +2,7 @@
 <title>skeptycal's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Apprentice Merchant (Level 2)</title><description>Added an external repository with git remote add.</description></item>
 <item><title>Apprentice Goldsmith (Level 3)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
 <item><title>Apprentice Goldsmith (Level 2)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
 <item><title>Socialite (Level 6)</title><description>pushed a branch to a remote repository using git push</description></item>
@@ -21,5 +22,4 @@
 <item><title>Apprentice Socialite (Level 3)</title><description>pushed a branch to a remote repository using git push</description></item>
 <item><title>Apprentice Author (Level 3)</title><description>Made 2^Level commits using git commit.</description></item>
 <item><title>Homeowner</title><description>Set global email address using git config.</description></item>
-<item><title>Baptised</title><description>Set global user name using git config.</description></item>
 </channel></rss>
