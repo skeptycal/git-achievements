@@ -2,18 +2,24 @@
 <title>skeptycal's Git Achievements</title>
 <description></description>
 <link></link>
-<item><title>Apprentice Collector (Level 2)</title><description>Fetches named heads or tags from another repository with git fetch</description></item>
-<item><title>Apprentice Carpenter (Level 1)</title><description>Custom git hooks are installed which help catch issues before they are shared.</description></item>
-<item><title>Apprentice Socialite (Level 3)</title><description>pushed a branch to a remote repository using git push</description></item>
-<item><title>Stone Mason (Level 4)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
-<item><title>Apprentice Author (Level 3)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Apprentice Stone Mason (Level 3)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
-<item><title>Apprentice Author (Level 2)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Apprentice Socialite (Level 2)</title><description>pushed a branch to a remote repository using git push</description></item>
-<item><title>Apprentice Stone Mason (Level 2)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
-<item><title>Apprentice Author (Level 1)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Apprentice Socialite (Level 1)</title><description>pushed a branch to a remote repository using git push</description></item>
-<item><title>Apprentice Stone Mason (Level 1)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
-<item><title>Apprentice Collector (Level 1)</title><description>Fetches named heads or tags from another repository with git fetch</description></item>
-<item><title>Student</title><description>Accessed the documentation for a command with git [command] --help</description></item>
+<item><title>Collector (Level 6)</title><description>Fetches named heads or tags from another repository with git fetch</description></item>
+<item><title>Master Socialite (Level 9)</title><description>pushed a branch to a remote repository using git push</description></item>
+<item><title>Apprentice Carpenter (Level 3)</title><description>Custom git hooks are installed which help catch issues before they are shared.</description></item>
+<item><title>Master Carpenter (Level        1)</title><description>Custom git hooks are installed which help catch issues before they are shared.</description></item>
+<item><title>Master Stone Mason (Level 11)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
+<item><title>Master Carpenter (Level 18)</title><description>Custom git hooks are installed which help catch issues before they are shared.</description></item>
+<item><title>Master Author (Level 10)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Merchant (Level 5)</title><description>Added an external repository with git remote add.</description></item>
+<item><title>Master Stone Mason (Level 10)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
+<item><title>Master Author (Level 9)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Caretaker</title><description>Added a .gitignore file to a repository.</description></item>
+<item><title>Goldsmith (Level 5)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
+<item><title>Goldsmith (Level 4)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
+<item><title>Apprentice Goldsmith (Level 3)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
+<item><title>Apprentice Goldsmith (Level 2)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
+<item><title>Apprentice Goldsmith (Level 1)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
+<item><title>Apprentice Gipsy (Level 1)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
+<item><title>Master Author (Level 8)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Master Socialite (Level 8)</title><description>pushed a branch to a remote repository using git push</description></item>
+<item><title>Master Stone Mason (Level 9)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
 </channel></rss>
