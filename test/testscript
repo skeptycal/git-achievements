@@ -39,10 +39,10 @@ function runtest() {
     git gc
     git gc
     git blame README
-   
-   
+
+
     git reflog
-   
+
     mv .git/hooks/pre-commit.sample .git/hooks/pre-commit
     git format-patch HEAD^
     git reset --hard HEAD^
@@ -50,7 +50,7 @@ function runtest() {
     git config alias.xxx ls-files
     git xxx
     git config --unset alias.xxx
-   
+
 }
 export PATH=$PATH:$PWD/../
 # can't use an alias in a shell script because it is evaluated at read time
