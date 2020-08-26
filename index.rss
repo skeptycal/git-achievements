@@ -2,6 +2,7 @@
 <title>skeptycal's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Master Architect (Level 8)</title><description>Created a new repository with git init.</description></item>
 <item><title>Master Product Manager (Level 9)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
 <item><title>Master Product Manager (Level 8)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
 <item><title>Master Product Manager (Level 7)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
@@ -21,5 +22,4 @@
 <item><title>Merchant (Level 5)</title><description>Added an external repository with git remote add.</description></item>
 <item><title>Master Stone Mason (Level 10)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
 <item><title>Master Author (Level 9)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Caretaker</title><description>Added a .gitignore file to a repository.</description></item>
 </channel></rss>
