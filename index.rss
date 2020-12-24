@@ -2,6 +2,7 @@
 <title>Michael Treanor's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Master Gipsy (Level 15)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
 <item><title>Master Gipsy (Level 14)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
 <item><title>Master Gipsy (Level 13)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
 <item><title>Master Gipsy (Level 12)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
@@ -21,5 +22,4 @@
 <item><title>Master Product Manager (Level 8)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
 <item><title>Master Product Manager (Level 7)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
 <item><title>Product Manager (Level 6)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
-<item><title>Product Manager (Level 5)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
 </channel></rss>
