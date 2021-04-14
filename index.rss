@@ -2,24 +2,24 @@
 <title>Michael Treanor's Git Achievements</title>
 <description></description>
 <link></link>
-<item><title>Master Gipsy (Level 15)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Master Gipsy (Level 14)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Master Gipsy (Level 13)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Master Gipsy (Level 12)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Master Gipsy (Level 11)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Master Gipsy (Level 10)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Master Gipsy (Level 9)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Master Gipsy (Level 8)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Master Gipsy (Level 7)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Gipsy (Level 5)</title><description>Create, list, delete a tag signed with GPG using git tag</description></item>
-<item><title>Apprentice Blacksmith (Level 3)</title><description>Created a branch using git checkout -b.</description></item>
-<item><title>Carpenter (Level 4)</title><description>Custom git hooks are installed which help catch issues before they are shared.</description></item>
-<item><title>Master Author (Level 11)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Master Product Manager (Level 10)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
-<item><title>Goldsmith (Level 6)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
-<item><title>Master Architect (Level 8)</title><description>Created a new repository with git init.</description></item>
-<item><title>Master Product Manager (Level 9)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
-<item><title>Master Product Manager (Level 8)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
-<item><title>Master Product Manager (Level 7)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
-<item><title>Product Manager (Level 6)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
+<item><title>Master Author (Level 7)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Garage Inventor</title><description>Used a custom alias for a Git command</description></item>
+<item><title>Master Stone Mason (Level 7)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
+<item><title>Master Socialite (Level 7)</title><description>pushed a branch to a remote repository using git push</description></item>
+<item><title>Author (Level 6)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Stone Mason (Level 6)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
+<item><title>Socialite (Level 6)</title><description>pushed a branch to a remote repository using git push</description></item>
+<item><title>Author (Level 5)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Stone Mason (Level 5)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
+<item><title>Socialite (Level 5)</title><description>pushed a branch to a remote repository using git push</description></item>
+<item><title>Architect (Level 4)</title><description>Created a new repository with git init.</description></item>
+<item><title>Author (Level 4)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Stone Mason (Level 4)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
+<item><title>Socialite (Level 4)</title><description>pushed a branch to a remote repository using git push</description></item>
+<item><title>Apprentice Author (Level 3)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Apprentice Stone Mason (Level 3)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
+<item><title>Apprentice Collector (Level 1)</title><description>Fetches named heads or tags from another repository with git fetch</description></item>
+<item><title>Apprentice Architect (Level 2)</title><description>Created a new repository with git init.</description></item>
+<item><title>Apprentice Socialite (Level 3)</title><description>pushed a branch to a remote repository using git push</description></item>
+<item><title>Let there be light</title><description>Commit without a parent.</description></item>
 </channel></rss>
