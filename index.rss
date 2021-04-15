@@ -2,6 +2,7 @@
 <title>Michael Treanor's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Apprentice Merchant (Level 1)</title><description>Added an external repository with git remote add.</description></item>
 <item><title>Apprentice Blacksmith (Level 2)</title><description>Created a branch using git checkout -b.</description></item>
 <item><title>Apprentice Blacksmith (Level 1)</title><description>Created a branch using git checkout -b.</description></item>
 <item><title>Apprentice Collector (Level 2)</title><description>Fetches named heads or tags from another repository with git fetch</description></item>
@@ -21,5 +22,4 @@
 <item><title>Stone Mason (Level 4)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
 <item><title>Socialite (Level 4)</title><description>pushed a branch to a remote repository using git push</description></item>
 <item><title>Apprentice Author (Level 3)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Apprentice Stone Mason (Level 3)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
 </channel></rss>
