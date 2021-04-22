@@ -2,6 +2,7 @@
 <title>Michael Treanor's Git Achievements</title>
 <description></description>
 <link></link>
+<item><title>Master Architect (Level 7)</title><description>Created a new repository with git init.</description></item>
 <item><title>Apprentice Product Manager (Level 2)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
 <item><title>Apprentice Product Manager (Level 1)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
 <item><title>Master Socialite (Level 9)</title><description>pushed a branch to a remote repository using git push</description></item>
@@ -21,5 +22,4 @@
 <item><title>Master Author (Level 7)</title><description>Made 2^Level commits using git commit.</description></item>
 <item><title>Garage Inventor</title><description>Used a custom alias for a Git command</description></item>
 <item><title>Master Stone Mason (Level 7)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
-<item><title>Master Socialite (Level 7)</title><description>pushed a branch to a remote repository using git push</description></item>
 </channel></rss>
